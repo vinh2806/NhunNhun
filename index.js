@@ -6,9 +6,9 @@
 
 
 // You can change global variables here:
-var radius = 240; // how big of the radius
+var radius = 300; // how big of the radius
 var autoRotate = true; // auto rotate or not
-var rotateSpeed = -60; // unit: seconds/360 degrees
+var rotateSpeed = -20; // unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
 var imgHeight = 170; // height of images (unit: px)
 
@@ -106,7 +106,7 @@ document.onpointerdown = function (e) {
   };
 
   this.onpointerup = function (e) {
-    odrag.timer = setInterval(function () {
+    odrag.timer = Setinterval(function () {
       desX *= 0.95;
       desY *= 0.95;
       tX += desX * 0.1;
